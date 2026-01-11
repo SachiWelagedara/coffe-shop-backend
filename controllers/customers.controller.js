@@ -1,4 +1,4 @@
-const Customer = require("../models/customer.model");
+const Customer = require("../services/customer.service");
 
 exports.register = (req, res) => {
     Customer.register(req.body, (err) => {

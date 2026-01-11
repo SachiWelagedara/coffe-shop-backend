@@ -1,4 +1,4 @@
-const category = require("../models/category.model");
+const category = require("../services/category.service");
 
 exports.getAll = (req, res) => {
     category.getAll((err, result) => {
