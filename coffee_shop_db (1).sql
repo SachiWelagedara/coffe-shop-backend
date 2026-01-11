@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Jan 10, 2026 at 07:13 PM
+-- Generation Time: Jan 11, 2026 at 10:17 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -63,7 +63,9 @@ CREATE TABLE `customers` (
 
 INSERT INTO `customers` (`id`, `name`, `email`, `phone`, `created_at`, `password`) VALUES
 (4, 'Sachini', 'sachini@gmail.com', '0712244567', '2026-01-09 19:34:21', '1234'),
-(5, 'Gayani', 'gayani@gmail.com', '0712244899', '2026-01-09 20:04:03', '123456');
+(5, 'Gayani', 'gayani@gmail.com', '0712244899', '2026-01-09 20:04:03', '123456'),
+(6, 'hashan', 'hashan@gmail.com', '0745577896', '2026-01-11 08:54:56', '$2b$10$kNPnUhuEdqdyfsJZE5qr9u6k9w9fOemzakgi73BUEOo5cDdVEvuKK'),
+(7, 'Gayani', 'gayani@gmail.com', '0712244899', '2026-01-11 08:59:46', '$2b$10$x2WWL4CTP8m5DyVLId5d6uM2Y3dwPE4itzvnEPyjmscKgpH2PUIAm');
 
 -- --------------------------------------------------------
 
@@ -156,7 +158,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `created_at`) VALUES
 (1, 'Admin', 'admin@gmail.com', '1234', 'admin', '2026-01-09 18:49:45'),
-(2, 'saduni', 'sadu@gmail.com', '12345', 'staff', '2026-01-09 18:56:21');
+(2, 'saduni', 'sadu@gmail.com', '12345', 'staff', '2026-01-09 18:56:21'),
+(3, 'nimal', 'nima@gmail.com', '$2b$10$igl9f4aMumvpFuFHj5zHJexQ.FrgaPeIXPeoQ.yGwmioKZie02Xq6', 'staff', '2026-01-11 09:02:09');
 
 --
 -- Indexes for dumped tables
@@ -216,7 +219,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -240,7 +243,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
